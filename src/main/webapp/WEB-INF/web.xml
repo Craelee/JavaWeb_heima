@@ -2,6 +2,49 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
                       http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
+    <servlet>
+        <servlet-name>RegistUserServlet</servlet-name>
+        <servlet-class>cn.itcast.travel.web.servlet.RegistUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistUserServlet</servlet-name>
+        <url-pattern>/registUserServlet</url-pattern>
+    </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ActiveUserServlet</servlet-name>
+        <servlet-class>cn.itcast.travel.web.servlet.ActiveUserServlet</servlet-class>
+    </servlet>
 
+    <servlet-mapping>
+        <servlet-name>ActiveUserServlet</servlet-name>
+        <url-pattern>/activeUserServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>cn.itcast.travel.web.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FindUserServlet</servlet-name>
+        <servlet-class>cn.itcast.travel.web.servlet.FindUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindUserServlet</servlet-name>
+        <url-pattern>/findUserServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ExitServlet</servlet-name>
+        <servlet-class>cn.itcast.travel.web.servlet.ExitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExitServlet</servlet-name>
+        <url-pattern>/exitServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
